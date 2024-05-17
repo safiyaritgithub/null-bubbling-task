@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>null&undefined-bubbling</title>
+</head>
+<style>
+  #outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+</style>
+<body>
+  <!-- BUBBLING -->
+  <h1>BUBBLING</h1>
+  <div id="outer">
+    
+    <div id="inner">
+      Click me
+    </div>
+  </div>
+
+  <!-- BUBBLING PREVENTING -->
+  <h1>BUBBLING PREVENTING</h1>
+  <div id="inner" onclick="eventHandler(); return false;">
+    Click me
+  </div>
+  
+
+
+  
+  <script src="script.js"></script>
+  
+</body>
+</html>
